@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!--font-family: 'Open Sans', sans-serif;-->
+
+    <title>модальное окно</title>
+</head>
+<body class="body">
+    <header class="header" id="header">
+        <div class="header__title">
+            <h1>модальное окно или popup</h1>
+        </div>
+        <div class="header__link">
+            <a href="#popup" class="popup__link">открыть модальное окно</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="main">
+            <div class="main__content">
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed similique dolorum quaerat at minima eum illo quis qui cum quae?</p>
+            </div>
+            <div class="main__gallery">
+                <img class="gallery__img" src="https://picsum.photos/id/870/200/300?grayscale&blur=2" alt="">
+                <img class="gallery__img" src="https://picsum.photos/200/300/?blur" alt="">
+                <img class="gallery__img" src="https://picsum.photos/200/300?grayscale" alt="">
+                <img class="gallery__img" src="https://picsum.photos/seed/picsum/200/300" alt="">
+                <img class="gallery__img" src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+        </main>
+        <footer class="footer">
+            <p>все права защищены</p>
+        </footer>
+    </div>
+
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__title">
+                    <h2>заголовок popup</h2>
+                </div>
+                <div class="popup__text">
+                    текст или контент popup Блока
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
